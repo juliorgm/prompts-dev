@@ -58,6 +58,7 @@ Biblioteca pessoal de prompts reutilizáveis para o dia a dia de desenvolvimento
 | Prompt | Para quê |
 |---|---|
 | [Descrição de PR](prompts/documentacao/descricao-pr.md) | Escrever a descrição do PR a partir do diff |
+| [Doc a partir do diff (Copilot agent)](prompts/documentacao/doc-a-partir-do-diff.md) | Copilot lê o `git diff` entre duas branches e gera a documentação técnica da entrega em `.md` |
 | [Explicar código legado](prompts/documentacao/explicar-codigo.md) | Entender rapidamente um trecho desconhecido |
 | [Mensagem para o time](prompts/documentacao/mensagem-time.md) | Comunicar impedimento, status ou decisão técnica |
 
