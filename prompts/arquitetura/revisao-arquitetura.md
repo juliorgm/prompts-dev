@@ -1,47 +1,21 @@
-# Revisão de arquitetura
+# Revisão de arquitetura do módulo
 
-**Objetivo:** avaliar a arquitetura de um módulo ou feature e propor melhorias priorizadas.
+**Onde:** Copilot (lê o projeto).
+**Uso:** avaliar um módulo antes de uma feature grande ou ao assumir um módulo novo.
+**Troque:** `{{modulo}}` = pasta do módulo; `{{dores}}` = problemas sentidos pelo time.
 
-**Quando usar:** antes de uma feature grande, em débito técnico recorrente ou ao assumir um módulo novo.
-
-**Placeholders:**
-- `{{estrutura}}` — árvore de pacotes/arquivos do módulo
-- `{{fluxo}}` — descrição de um fluxo ponta a ponta (tela → API)
-- `{{dores}}` — problemas sentidos pelo time (bugs recorrentes, lentidão para evoluir, testes difíceis)
-- `{{codigo_amostra}}` — trechos representativos (opcional)
-
-## Prompt
-
+## Parte 1 — Mapa
 ```
-Você é um arquiteto Android especialista em apps modulares de grande escala (dezenas de módulos, centenas de devs), Clean Architecture e MVVM.
+Analise o módulo {{modulo}}. Mostre a estrutura de pacotes e um diagrama Mermaid do fluxo principal (tela → ViewModel → UseCase → Repository → API).
+```
 
-## Estrutura do módulo
-{{estrutura}}
+## Parte 2 — Diagnóstico
+```
+Avalie: direção das dependências, acoplamento com outros módulos, estado de UI, tratamento de erro entre camadas, DI e testabilidade. Dores do time: {{dores}}.
+Liste o que está bom e o que está ruim, sempre com arquivo de exemplo.
+```
 
-## Fluxo representativo
-{{fluxo}}
-
-## Dores do time
-{{dores}}
-
-## Código de amostra
-{{codigo_amostra}}
-
-## Tarefa
-Avalie a arquitetura considerando:
-- Separação de camadas e direção das dependências
-- Fronteiras do módulo: API pública vs implementação, acoplamento com outros módulos
-- Gerenciamento de estado e fluxo de dados (unidirecional?)
-- Tratamento de erros entre camadas
-- Testabilidade
-- Injeção de dependência
-- Navegação entre módulos
-- Escalabilidade para novas features
-
-## Formato da resposta
-1. Diagnóstico: o que está bom, o que está ruim (com evidências)
-2. Diagrama atual em texto (ou Mermaid)
-3. Proposta de arquitetura-alvo (Mermaid)
-4. Plano de migração incremental, priorizado por impacto/esforço
-5. Riscos e o que NÃO vale a pena mudar agora
+## Parte 3 — Plano
+```
+Proponha melhorias incrementais em tabela: | Melhoria | Impacto | Esforço | Risco |. Diga também o que NÃO vale mudar agora.
 ```

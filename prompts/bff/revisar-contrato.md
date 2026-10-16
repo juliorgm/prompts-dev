@@ -1,5 +1,7 @@
 # Revisar contrato de API
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** encontrar lacunas e ambiguidades em um contrato de API antes de começar a implementar.
 
 **Quando usar:** quando o BFF/backend compartilha o contrato (Swagger, exemplo de JSON, documento).

@@ -1,44 +1,20 @@
 # Tela em Jetpack Compose
 
-**Objetivo:** criar (ou revisar) uma tela Compose bem estruturada: estado, eventos, previews e acessibilidade.
+**Onde:** Copilot.
+**Uso:** criar ou migrar uma tela para Compose.
+**Troque:** `{{tela}}` = descrição da tela (componentes, estados, interações).
 
-**Quando usar:** ao implementar uma tela nova ou migrar uma tela de XML para Compose.
-
-**Placeholders:**
-- `{{descricao_tela}}` — layout e comportamento em texto (componentes, estados, interações)
-- `{{design_system}}` — componentes/tema disponíveis (genérico)
-- `{{uistate}}` — UiState existente, se houver
-
-## Prompt
-
+## Parte 1 — Estado
 ```
-Você é um desenvolvedor Android sênior especialista em Jetpack Compose.
+Tela: {{tela}}. Proponha o UiState imutável (loading, sucesso, vazio, erro) e os eventos únicos (navegação, snackbar). Só o modelo, sem UI.
+```
 
-## Tela
-{{descricao_tela}}
+## Parte 2 — UI
+```
+Implemente Route (conecta ao ViewModel com collectAsStateWithLifecycle) e Screen stateless (recebe UiState e lambdas). Use o design system do projeto e componentes pequenos.
+```
 
-## Design system disponível
-{{design_system}}
-
-## UiState existente (se houver)
-{{uistate}}
-
-## Tarefa
-Implemente a tela seguindo:
-- Separação Route (conecta ao ViewModel) / Screen (stateless, recebe UiState e lambdas)
-- UiState imutável modelando loading, sucesso, vazio e erro (sealed interface ou data class com flags, justifique)
-- Coleta de estado com collectAsStateWithLifecycle
-- Eventos únicos (navegação, snackbar) sem perder emissões
-- State hoisting e componentes pequenos e reutilizáveis
-- Evitar recomposições desnecessárias (parâmetros estáveis, remember, derivedStateOf, keys em listas)
-- Acessibilidade: contentDescription, semantics, ordem de leitura, tamanho mínimo de toque 48dp
-- Previews para cada estado (inclusive dark mode e fonte grande)
-- Test tags para testes de UI
-
-## Formato da resposta
-1. Estrutura de arquivos proposta
-2. UiState e eventos
-3. Código da Route e da Screen
-4. Previews
-5. Pontos de atenção para o code review
+## Parte 3 — Qualidade
+```
+Adicione previews de cada estado (incluindo dark e fonte grande), contentDescription/semantics, área de toque de 48dp e testTags. Aponte riscos de recomposição.
 ```

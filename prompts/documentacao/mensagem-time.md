@@ -1,5 +1,7 @@
 # Mensagem para o time
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** comunicar impedimento, status, risco ou decisão técnica de forma clara e curta.
 
 **Quando usar:** Slack/Teams com PO, outras squads, BFF, liderança.

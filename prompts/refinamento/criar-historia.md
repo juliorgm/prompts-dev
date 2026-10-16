@@ -1,5 +1,7 @@
 # Criar história de desenvolvimento
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** transformar uma demanda solta (conversa, print, e-mail, ideia do PO) em uma história de usuário clara, testável e pronta para refinamento.
 
 **Quando usar:** antes do refinamento, quando chega uma demanda nova ou mal descrita.

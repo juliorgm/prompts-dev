@@ -1,26 +1,15 @@
 # Nome do prompt
 
-**Objetivo:** o que este prompt resolve, em uma frase.
+**Onde:** Copilot (mexe em código) ou StackSpot (não mexe em código).
+**Uso:** quando usar, em uma linha.
+**Troque:** `{{exemplo}}` = o que colar aqui.
 
-**Quando usar:** em que momento do fluxo de trabalho ele entra.
-
-**Placeholders:**
-- `{{exemplo}}` — o que colar aqui
-
-## Prompt
-
+## Copilot: curto e em partes
 ```
-Você é ...
-
-## Contexto
-{{exemplo}}
-
-## Tarefa
-...
-
-## Formato da resposta
-...
+Até ~6 linhas por parte. Uma tarefa por parte. Diga o formato da saída.
+Use #file em vez de colar código.
 ```
+Rode a Parte 1, leia a resposta e depois mande a Parte 2.
 
-## Dicas
-- Ajustes comuns ou variações úteis.
+## StackSpot: pode ser completo
+Papel, contexto, tarefa e formato de resposta detalhados em um único prompt.

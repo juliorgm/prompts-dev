@@ -1,5 +1,7 @@
 # Checklist de release
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** gerar um checklist pré-release específico para o que está sendo entregue.
 
 **Quando usar:** antes de congelar a versão / enviar para o trem de release.

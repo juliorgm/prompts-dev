@@ -1,37 +1,16 @@
 # Testes de UseCase / Repository
 
-**Objetivo:** gerar testes das camadas de domínio e dados, incluindo mapeamento e tratamento de erro.
+**Onde:** Copilot.
+**Uso:** testar regras de negócio, mapeamento e tratamento de erro.
+**Troque:** `{{classe}}` = #file da classe.
 
-**Quando usar:** ao criar ou alterar UseCases, Repositories, DataSources ou mappers.
-
-**Placeholders:**
-- `{{codigo}}` — classe(s) a testar
-- `{{dependencias}}` — interfaces usadas
-- `{{stack_testes}}` — JUnit, MockK/fakes, coroutines-test etc.
-
-## Prompt
-
+## Parte 1 — Matriz
 ```
-Você é um desenvolvedor Android sênior especialista em testes de domínio e dados.
+Monte a matriz de cenários de {{classe}}: | cenário | entrada | resultado esperado |.
+Inclua cada ramo de regra, campos nulos, enum desconhecido, lista vazia, erro HTTP, timeout e sem conexão.
+```
 
-Stack de testes: {{stack_testes}}
-
-## Código
-{{codigo}}
-
-## Dependências
-{{dependencias}}
-
-## Tarefa
-Escreva os testes unitários cobrindo:
-- Regras de negócio do UseCase (cada ramo de decisão)
-- Mapeamento DTO → domain: campos obrigatórios, opcionais nulos, enums desconhecidos, listas vazias, formatos de data/valor
-- Tratamento de erro: HTTP 4xx/5xx, timeout, sem conexão, payload inválido; como cada erro é convertido para o domínio
-- Estratégia de cache (se houver): hit, miss, expiração, fonte de verdade
-- Concorrência: chamadas simultâneas, cancelamento
-
-## Formato da resposta
-1. Matriz de cenários (tabela: cenário | entrada | resultado esperado)
-2. Código completo dos testes
-3. Builders/fixtures de dados de teste reutilizáveis
+## Parte 2 — Código
+```
+Escreva os testes da matriz seguindo o padrão do projeto. Crie builders de dados de teste reutilizáveis.
 ```

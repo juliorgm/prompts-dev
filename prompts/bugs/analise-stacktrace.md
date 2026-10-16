@@ -1,37 +1,21 @@
 # Análise de stacktrace
 
-**Objetivo:** diagnosticar um crash a partir do stacktrace e do contexto, chegando à causa raiz provável e à correção.
+**Onde:** Copilot.
+**Uso:** diagnosticar um crash ou ANR.
+**Troque:** `{{stacktrace}}` (sem dados de usuário) e `{{contexto}}` = versão, aparelho, frequência, o que o usuário fazia.
 
-**Quando usar:** crash no Crashlytics/console, ANR ou falha em teste.
-
-> ⚠️ Remova dados de usuário, tokens e identificadores do log antes de colar.
-
-**Placeholders:**
-- `{{stacktrace}}` — stacktrace completo
-- `{{codigo}}` — trechos de código das linhas envolvidas
-- `{{contexto}}` — versão do app, Android/dispositivo, frequência, quando começou, o que o usuário fazia
-
-## Prompt
-
+## Parte 1 — Diagnóstico
 ```
-Você é um desenvolvedor Android sênior especialista em diagnóstico de crashes (lifecycle, coroutines, Compose, R8/ProGuard, threading).
+Stacktrace: {{stacktrace}}. Contexto: {{contexto}}.
+Ache a linha de origem no nosso código, explique o erro em linguagem simples e liste as hipóteses de causa da mais provável para a menos provável, com evidência.
+```
 
-## Stacktrace
-{{stacktrace}}
+## Parte 2 — Reproduzir
+```
+Para a hipótese principal, dê os passos para reproduzir localmente (inclua opções do desenvolvedor, como "Não manter atividades", se fizer sentido).
+```
 
-## Código relacionado
-{{codigo}}
-
-## Contexto
-{{contexto}}
-
-## Tarefa
-1. Explique em linguagem simples o que o stacktrace está dizendo e qual é a linha de origem real (ignorando frames de framework).
-2. Liste as hipóteses de causa raiz, da mais para a menos provável, com a evidência de cada uma.
-3. Para a hipótese principal: como reproduzir localmente (passos, flags do dev options, ex.: "Não manter atividades").
-4. Proponha a correção com código e explique por que ela resolve a causa, e não só o sintoma.
-5. Sugira um teste que impediria a regressão.
-6. Diga se há outros pontos do código com o mesmo padrão de risco.
-
-Se faltar informação para concluir, diga exatamente o que coletar.
+## Parte 3 — Corrigir
+```
+Proponha a correção da causa, não do sintoma, com código. Sugira um teste que pegaria a regressão e aponte outros lugares do código com o mesmo risco.
 ```

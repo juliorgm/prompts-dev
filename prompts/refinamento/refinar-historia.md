@@ -1,5 +1,7 @@
 # Refinar e quebrar história
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** quebrar uma história em tasks técnicas executáveis e antecipar riscos e dúvidas.
 
 **Quando usar:** durante ou logo antes do refinamento técnico.
@@ -11,7 +13,7 @@
 ## Prompt
 
 ```
-Você é um desenvolvedor Android sênior (Kotlin, MVVM, Clean Architecture, Coroutines/Flow, Jetpack Compose) em um super app modular.
+Você é um desenvolvedor Android sênior (Kotlin, MVVM, Clean Architecture, Coroutines/Flow) em um super app modular.
 
 ## Arquitetura do módulo
 {{arquitetura}}

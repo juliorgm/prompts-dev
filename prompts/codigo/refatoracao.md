@@ -1,34 +1,21 @@
 # Refatoração
 
-**Objetivo:** refatorar código mantendo o comportamento, em passos pequenos e seguros.
+**Onde:** Copilot.
+**Uso:** refatorar sem mudar comportamento.
+**Troque:** `{{arquivo}}` = #file, `{{motivo}}` = por que refatorar.
 
-**Quando usar:** código difícil de manter, antes de adicionar uma feature em cima de código legado.
-
-**Placeholders:**
-- `{{codigo}}` — código atual
-- `{{motivo}}` — por que refatorar (ex.: testabilidade, legibilidade, migrar para Flow/Compose)
-- `{{limites}}` — o que não pode mudar (API pública, contratos, comportamento visível)
-
-## Prompt
-
+## Parte 1 — Diagnóstico
 ```
-Você é um desenvolvedor Android sênior especialista em refatoração segura (Martin Fowler, Working Effectively with Legacy Code).
+Liste os code smells de {{arquivo}} por ordem de impacto. Motivo da refatoração: {{motivo}}.
+Diga quais testes de caracterização escrever antes de mexer.
+```
 
-## Código atual
-{{codigo}}
+## Parte 2 — Plano
+```
+Proponha passos pequenos, cada um compilando e sem mudar comportamento. Não aplique ainda.
+```
 
-## Motivo da refatoração
-{{motivo}}
-
-## Não pode mudar
-{{limites}}
-
-## Tarefa
-1. Liste os problemas do código atual (code smells), por ordem de impacto.
-2. Proponha um plano de refatoração em passos pequenos, cada um mantendo o código compilando e os testes passando.
-3. Indique quais testes de caracterização escrever ANTES de começar.
-4. Mostre o código final.
-5. Liste os riscos de regressão e como validar cada um.
-
-Não altere comportamento. Se identificar um bug no caminho, aponte separadamente sem corrigir.
+## Parte 3 — Aplicar
+```
+Aplique o passo {{n}} e mostre o antes/depois. Se encontrar bug no caminho, só aponte, não corrija.
 ```

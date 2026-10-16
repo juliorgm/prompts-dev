@@ -1,11 +1,10 @@
 # Tagueamento e correções item a item
 
-**Objetivo:** implementar o tagueamento (analytics) de uma feature e as correções pendentes, conferindo um item por vez, arquivo por arquivo.
-
-**Placeholders:** `{{lista}}` (tags da especificação e correções), `{{arquivos}}` (arquivos da feature)
+**Onde:** Copilot.
+**Uso:** incluir analytics e correções numa feature, conferindo um item por vez, arquivo por arquivo.
+**Troque:** `{{lista}}` = tags da especificação e correções; `{{arquivos}}` = arquivos da feature.
 
 ## Prompt
-
 ```
 Vou te passar a lista de tags e correções: {{lista}}. Arquivos da feature: {{arquivos}}.
 Siga o padrão de tagueamento que já existe no projeto (procure um exemplo antes de começar).

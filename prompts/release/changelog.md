@@ -1,5 +1,7 @@
 # Changelog e nota de versão
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** gerar o changelog técnico e uma nota de versão em linguagem de negócio a partir dos commits/PRs.
 
 **Quando usar:** no fechamento de uma versão do módulo.

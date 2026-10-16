@@ -1,5 +1,7 @@
 # Estimar história
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** ter um apoio fundamentado para a estimativa, sem substituir a conversa do time.
 
 **Quando usar:** no planning poker ou ao preparar a sprint.

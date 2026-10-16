@@ -1,5 +1,7 @@
 # ADR (Architecture Decision Record)
 
+**Onde:** StackSpot (não mexe em código, pode ser completo).
+
 **Objetivo:** registrar uma decisão técnica de forma clara, com alternativas e consequências.
 
 **Quando usar:** ao decidir lib, padrão, estratégia de cache, estrutura de módulo, migração etc.
