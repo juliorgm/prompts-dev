@@ -27,6 +27,7 @@ Biblioteca pessoal de prompts reutilizáveis para o dia a dia de desenvolvimento
 | [Code review de branch (Copilot agent)](prompts/codigo/code-review-branch-copilot.md) | Copilot roda o `git diff` entre duas branches e faz o CR com limpeza |
 | [Testes de ViewModel](prompts/codigo/testes-viewmodel.md) | Gerar testes unitários de ViewModel com Coroutines/Flow |
 | [Testes de UseCase/Repository](prompts/codigo/testes-usecase-repository.md) | Testes das camadas de domínio e dados |
+| [Tagueamento e correções item a item](prompts/codigo/tagueamento-item-a-item.md) | Incluir analytics e correções conferindo um item por vez, arquivo por arquivo |
 | [Refatoração](prompts/codigo/refatoracao.md) | Refatorar mantendo comportamento, passo a passo |
 | [Tela em Jetpack Compose](prompts/codigo/tela-compose.md) | Criar/revisar tela Compose com estado, previews e acessibilidade |
 
