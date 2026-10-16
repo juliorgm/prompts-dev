@@ -24,6 +24,7 @@ Biblioteca pessoal de prompts reutilizáveis para o dia a dia de desenvolvimento
 | Prompt | Para quê |
 |---|---|
 | [Code review](prompts/codigo/code-review.md) | Review completo de PR Kotlin/Android com severidade |
+| [Code review de branch (Copilot agent)](prompts/codigo/code-review-branch-copilot.md) | Copilot roda o `git diff` entre duas branches e faz o CR com limpeza |
 | [Testes de ViewModel](prompts/codigo/testes-viewmodel.md) | Gerar testes unitários de ViewModel com Coroutines/Flow |
 | [Testes de UseCase/Repository](prompts/codigo/testes-usecase-repository.md) | Testes das camadas de domínio e dados |
 | [Refatoração](prompts/codigo/refatoracao.md) | Refatorar mantendo comportamento, passo a passo |
